@@ -1,13 +1,14 @@
 body{
     margin: 0 10px;
     padding: 0;
+    font-family: din-web,sans-serif!important;
 }
 
 /* navbar section1 */
 .nav>div:nth-child(1){
     display: flex;
     justify-content: right;
-    border-bottom: 2px dotted #919191;
+    border-bottom: 2px dashed #919191;
 }
 .nav>div:nth-child(1) a{
     margin: 4px 15px;
@@ -174,19 +175,148 @@ body{
 /* summer reloaded */
 
 .summer{
-    border: 2px solid darkblue;
     display: flex;
     width: 90%;
     margin: 30px auto;
     justify-content: space-evenly;
 }
-.summer>div:nth-child(1){
+.summer>div:nth-child(1),.summer>div:nth-child(3){
     display: flex;
     flex-direction: column;
-}
-.summer>div:nth-child(2){
-    border: 2px solid darksalmon;
-    width: 33%;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-  
+.img1summer{
+    background-image: url("http://staticawsy.yepme.com/images/men_bottomwear_10oct17.jpg");
+    height: 515px;
+    width: 352px;
+    margin-bottom: 20px;
+}
+.img2summer{
+    background-image: url("http://staticawsy.yepme.com/images/men_watches_10oct17.jpg");
+    height: 515px;
+    width: 352;
+}
+.img3summer{
+    background-image: url("http://staticawsy.yepme.com/images/women_bottomwear_10oct17.jpg");
+    height: 515px;
+    width: 352px;
+    margin-bottom: 20px;
+}
+.img4summer{
+    background-image: url("http://staticawsy.yepme.com/images/women_watches_10oct17.jpg");
+    height: 515px;
+    width: 352px;
+}
+
+.summer>div:nth-child(1) button, .summer>div:nth-child(3) button{
+    margin-left:40%;
+    margin-top: 65%;
+    cursor: pointer;
+    border: 2px solid grey;
+    position: relative;
+    display: none;
+}
+
+/* img hover */
+.img1summer:hover,.img2summer:hover,.img3summer:hover,.img4summer:hover{
+    background-color: #919191;
+}
+.img1summer:hover .btn1,.img2summer:hover .btn2,.img3summer:hover .btn3,.img4summer:hover .btn4{
+    display: block;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+
+/* Center img */
+.summer > div:nth-child(2){
+    text-align: center;
+    font-family: din-web,sans-serif!important;
+}
+.summer > div:nth-child(2) p:hover{
+    color: #f66f0c;
+}
+.center_img{
+    background-image: url("http://staticawsy.yepme.com/images/center_images_winterwear_10oct17.gif");
+    height: 695px;
+    width: 530px;
+}
+.Centerbtn{
+    margin-left:40%;
+    position: relative;
+    top:350px;
+    display: none;
+    cursor: pointer;
+    
+}
+.center_img:hover .Centerbtn{
+    display: block;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 5px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.spring{
+    text-align: left;
+    margin-top: 40px;
+}
+.spring button{
+    background-color: transparent;
+    font-size: 20px;
+}
+.spring a{
+    text-decoration: none;
+    color: black;
+}
+.spring a:hover{
+    color: white;
+}
+.spring button:hover{
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* summer section ends here */
+
+/* spring shop section */
+
+.springshop{
+    text-align: center;
+}
+.springImg img{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* style feature */
+
+.stylefeature{
+    text-align: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid gray;
+}
+.styleimgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cod{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #919191;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}

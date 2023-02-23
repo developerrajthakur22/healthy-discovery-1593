@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <style>
+        body{
+            margin: 0 10px;
+            font-family: din-web,sans-serif!important;
+            padding: 0;
+            background-color: #e7e7e7;
+        }
+        .logo{
+            width: 200px;
+            margin: 0 28.5%;
+            margin-top: 6%;
+            text-align: center;
+        }
+        .loginwindow{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-color: white;
+            border: 2px solid #fbf7f7;
+            border-radius: 16px;
+            width: 28%;
+            margin: 6% auto;
+            padding: 0 60px;
+        }
+        .emailInp, .password, .name{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        p{
+            margin-bottom: 4px;
+        }
+        button{
+            width: 100%;
+            border-radius: 20px;
+            height: 38px;
+            font-size: 15px;
+            margin-bottom: 40px;
+            margin-top: 12px;
+            background-color: #f66f0c;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form class="loginwindow">
+        <img src="Fashion.png" alt="" class="logo">
+        <h1>SIGN UP</h1>
+
+        <p>Name</p>
+        <input type="text" class="name">
+
+        <p>Email</p>
+        <input type="email" class="emailInp">
+        
+        <p>Password</p>
+        <input type="password" class="password">
+
+        <button>SIGN UP</button>
+    </form>
+
+    <script>
+       let name = document.querySelector(".name")
+       let email = document.querySelector(".emailInp")
+       let pw = document.querySelector(".password")
+
+       
+       let loginData = JSON.parse(localStorage.getItem("login")) || []
+       
+       let form = document.querySelector("form")
+       
+       form.addEventListener("submit", ()=>{
+        event.preventDefault()
+        
+           console.log(name.value)    
+        
+        let obj = {
+            name:name.value,
+            email:email.value,
+            pw:pw.value
+         }
+         
+         loginData.push(obj)
+
+         localStorage.setItem("login", JSON.stringify(loginData))
+
+         window.alert("Signed in")
+         window.location.href = "index.html"
+       
+       })   
+    </script>
+</body>
+</html>
