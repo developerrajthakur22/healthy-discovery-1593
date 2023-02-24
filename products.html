@@ -5,8 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+      <!-- navbar -->
+      <div class="nav">
+        <!--navbar section 1 -->
+         <div>
+            <a href="" id="loginname"></a>
+            <a href=""><i class="fa-sharp fa-solid fa-download"></i> DOWNLOAD APP</a>
+            <a href=""><i class="fa-sharp fa-solid fa-location-dot"></i> CONTACT US</a>
+            <a href="loginpage.html"><i class="fa-sharp fa-solid fa-user"></i> LOGIN</a>
+            <a href="signup.html"><i class="fa-sharp fa-solid fa-user"></i> SIGN UP</a>   
+        </div>
+ 
+         <!--navbar section 2 -->
+         <div>
+             <img src="./Fashion.png" alt="" height="50px">
+             <input type="text" placeholder="Search for FRESH FASHION" class="searchInput" >
+             <button class="searchBtn">SEARCH</button>
+             <img src="./store.png" alt="" height="40px">
+             <div>
+             <a href="" class="cartLink"><i class="fa-sharp fa-solid fa-cart-shopping"></i> Cart</a>
+             <a href=""><i class="fa-sharp fa-solid fa-gift"></i> Loyalty Points</a>
+             </div>
+         </div>
+       
+         <!--navbar section 3 -->
+         <div>
+             <div class="left">
+             <button class="men">MEN
+                 <div class="MenDropdown">
+                     <!-- dropdown -->
+                      <li><b>Upper</b><ul>
+                         <li><a href="#">Shirt</a></li>
+                         <li><a href="#">T-Shirt</a></li>
+                         <li><a href="#">Jackets</a></li>
+                       </ul></li>
+              
+                       <li><b>Bottom</b><ul>
+                          <li><a href="#">Jeans</a></li>
+                          <li><a href="#">Joggers</a></li>
+                          <li><a href="#">Lower</a></li>
+                       </ul></li>
+                       
+                       <li><b>Footwear</b><ul>
+                          <li><a href="#">sandel</a></li>
+                          <li><a href="#">shoes</a></li>
+                          <li><a href="#">slipper</a></li>
+                       </ul></li>
+                      
+                  </div>
+             </button>
+             <button class="women">WOMEN
+                 <div class="WomenDropDown">
+                     <!-- dropdown -->
+                         <li><b>Upper</b><ul>
+                            <li><a href="#">Shirt</a></li>
+                            <li><a href="#">T-Shirt</a></li>
+                            <li><a href="#">Jackets</a></li>
+                          </ul></li>
+                 
+                          <li><b>Bottom</b><ul>
+                             <li><a href="#">Jeans</a></li>
+                             <li><a href="#">Joggers</a></li>
+                             <li><a href="#">Lower</a></li>
+                          </ul></li>
+                          
+                          <li><b>Footwear</b><ul>
+                             <li><a href="#">sandel</a></li>
+                             <li><a href="#">shoes</a></li>
+                             <li><a href="#">slipper</a></li>
+                          </ul></li>        
+                 </div>
+             </button>
+             </div>
+             <div class="right">
+             <button><i class="fa-sharp fa-solid fa-truck-front"></i>LOOK BOOK</button>
+             <button>BLOG</button>
+             </div>
+         </div>
+ 
+         <!-- navbar ends here -->
+
+         <p class="homeway"> <a href="index.html">HOME</a> > PRODUCTS </p>
+
+         <!-- products start -->
+
+         <div class="container">
+           
+          <div class="filterbox">
+
+          </div>
+
+          <div class="hp-container">
+             <div class="head">
+                T-SHIRTS <span id="count"></span>
+             </div>
+            <div class="products">
+     
+            </div>
+         </div>
+                  
+
+         </div>
+
+
+     <script src="products.js"></script>    
 </body>
 </html>
