@@ -1,0 +1,195 @@
+body{
+    margin: 0 10px;
+    padding: 0;
+    font-family: din-web,sans-serif!important;
+}
+
+/* navbar section1 */
+.nav>div:nth-child(1){
+    display: flex;
+    justify-content: right;
+    border-bottom: 2px dashed #919191;
+}
+.nav>div:nth-child(1) a{
+    margin: 4px 15px;
+    color: #919191;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+.nav>div:nth-child(1) a:hover{
+    color: #f66f0c;;
+}
+
+/* navbar section 2 */
+.nav>div:nth-child(2){
+    display: flex;
+}
+.searchInput{
+    margin-left: 10%;
+    width: 458px;
+    border: 1.5px solid #f66f0c;;
+    border-radius: 2px;
+    height: 28px;
+    margin-top: 15px;
+}
+.searchBtn{
+    height: 32px;
+    margin-top: 15px;
+    margin-left: 8px;
+    margin-right: 18%;
+    background-color: #f66f0c;
+    border: 1px solid #f66f0c;
+    border-radius: 2px;
+    width: 100px;
+    color: white;
+}
+.nav>div:nth-child(2)>img:nth-child(4){
+    margin-top: 20px;
+}
+.nav>div:nth-child(2)>img:nth-child(1){
+    margin-top: 10px;
+    margin-left:-6px;
+}
+.nav>div:nth-child(2)>div{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.nav>div:nth-child(2) a{
+    text-decoration: none;
+    color: black;
+}
+.nav>div:nth-child(2) a:hover{
+    color: #f66f0c;
+}
+
+/* navbar section 3 */
+.nav>div:nth-child(3){
+    background-color: black;
+    margin-top: 8px;
+    height: 40px;
+    display: flex;
+    position: sticky;
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+.left>button{
+    background-color: black;
+    color: white;
+    width: 90px;
+}
+.men:hover, .women:hover{
+    background-color: white;
+    border:2px solid white;
+    color: #f66f0c;
+}
+
+.right{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+.right>button{
+    background-color: black;
+    color: white;
+}
+.right>button:hover{
+    background-color: white;
+    border:2px solid white;
+    color: #f66f0c;
+}
+
+/* dropdown css */
+.MenDropdown, .WomenDropDown{
+    border: 10px solid white;
+    margin-top: 12px;
+    width: 15%;
+    position: absolute;
+    display: none; 
+    z-index: 999;
+}
+.men:hover .MenDropdown, .women:hover .WomenDropDown{
+    display: block;
+    background-color: white;
+}
+.MenDropdown a, .WomenDropDown a{
+    text-decoration: none;
+    color: black;
+}
+.MenDropdown a:hover, .WomenDropDown a:hover{
+    color: #f66f0c;
+}
+
+/* navbar ends here */
+
+.homeway a{
+    text-decoration: none;
+    color: #919191;
+}
+.homeway a:hover{
+    color: #f66f0c;
+}
+.homeway{
+    font-size: 15px;
+}
+
+/* Products part */
+
+.container{
+    border: 2px solid red;
+    display: flex;
+}
+
+.filterbox{
+    border: 2px solid darkblue;
+    width: 22%;
+    height: 500px;
+}
+
+.hp-container{
+    border: 2px solid f saddlebrown;
+    width: 78%;
+}
+
+.head{
+    border: 2px solid saddlebrown;
+}
+.products{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    grid-gap: 24px; 
+    justify-content: center;
+}
+
+.divclass{
+    border: 1px dashed #ccc;
+    text-align: center;
+    background-color: #f5f3f3;
+    cursor: pointer;
+}
+.divclass:hover{
+    border: 1px dashed black;
+}
+.size{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.sizeclass{
+    border: 2px solid #ccc;
+    font-size: 14px;
+    padding: 2px;
+    background-color: white;
+    margin-bottom: 0px;
+}

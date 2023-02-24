@@ -1,0 +1,165 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "http://staticawsy.yepme.com/newcampaign/1614/161494_ypxl_1.jpg",
+            "name": "T-shirt 1",
+            "price": 200,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 2,
+            "image": "http://staticawsy.yepme.com/newcampaign/1614/161493_ypxl_1.jpg",
+            "name": "T-shirt 2",
+            "price": 300,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+            
+        },
+        {
+            "id": 3,
+            "image": "http://staticawsy.yepme.com/newcampaign/1614/161471_ypxl_1.jpg",
+            "name": "T-shirt 3",
+            "price": 400,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 4,
+            "image": "http://staticawsy.yepme.com/newcampaign/1614/161482_ypxl_1.jpg",
+            "name": "T-shirt 4",
+            "price": 250,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 5,
+            "image": "http://staticawsy.yepme.com/newcampaign/1615/161500_ypxl_1.jpg",
+            "name": "T-shirt 5",
+            "price": 299,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 6,
+            "image": "http://staticawsy.yepme.com/newcampaign/1614/161491_ypxl_1.jpg",
+            "name": "T-shirt 6",
+            "price": 450,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 7,
+            "image": "http://staticawsy.yepme.com/newcampaign/1705/170563_ypxl_1.jpg",
+            "name": "T-shirt 7",
+            "price": 600,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 8,
+            "image": "http://staticawsy.yepme.com/newcampaign/1392/139243_ypxl_1.jpg",
+            "name": "T-shirt 8",
+            "price": 650,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 9,
+            "image": "http://staticawsy.yepme.com/newcampaign/1392/139269_ypxl_1.jpg",
+            "name": "T-shirt 9",
+            "price": 580,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 10,
+            "image": "http://staticawsy.yepme.com/newcampaign/1674/167407_ypxl_1.jpg",
+            "name": "T-shirt 10",
+            "price": 700,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"male"
+        },
+        {
+            "id": 11,
+            "image": "http://staticawsy.yepme.com/newcampaign/1394/139411_ypxl_1.jpg",
+            "name": "T-shirt 11",
+            "price": 799,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 12,
+            "image": "http://staticawsy.yepme.com/newcampaign/1394/139413_ypxl_1.jpg",
+            "name": "T-shirt 12",
+            "price": 300,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 13,
+            "image": "http://staticawsy.yepme.com/newcampaign/1506/150619_ypxl_1.jpg",
+            "name": "T-shirt 13",
+            "price": 350,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 14,
+            "image": "http://staticawsy.yepme.com/newcampaign/1394/139427_ypxl_1.jpg",
+            "name": "T-shirt 14",
+            "price": 749,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 15,
+            "image": "http://staticawsy.yepme.com/newcampaign/1660/166062_ypxl_1.jpg",
+            "name": "T-shirt 15",
+            "price": 799,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 16,
+            "image": "http://staticawsy.yepme.com/newcampaign/1535/153597_ypxl_1.jpg",
+            "name": "T-shirt 16",
+            "price": 400,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 17,
+            "image": "http://staticawsy.yepme.com/newcampaign/1535/153596_ypxl_1.jpg",
+            "name": "T-shirt 17",
+            "price": 300,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 18,
+            "image": "http://staticawsy.yepme.com/newcampaign/1535/153594_ypxl_1.jpg",
+            "name": "T-shirt 18",
+            "price": 390,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 19,
+            "image": "http://staticawsy.yepme.com/newcampaign/1535/153595_ypxl_1.jpg",
+            "name": "T-shirt 19",
+            "price": 999,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        },
+        {
+            "id": 20,
+            "image": "http://staticawsy.yepme.com/newcampaign/1535/153588_ypxl_1.jpg",
+            "name": "T-shirt 20",
+            "price": 150,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac faucibus ipsum, a interdum velit.",
+            "gender":"female"
+        }
+    ]
+}
