@@ -62,8 +62,12 @@ function check(data){
      btn.classList.add("addtocart")
 
      btn.addEventListener("click", ()=>{
-        cartdata.push(element)
-        localStorage.setItem("cart", JSON.stringify(cartdata))
+        if(Username=="WELCOME GUEST"){
+            alert("Please login first")
+        }else{
+            cartdata.push(element)
+            localStorage.setItem("cart", JSON.stringify(cartdata))
+        }
      })
 
      div.append(img,price,size,btn)
