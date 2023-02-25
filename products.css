@@ -144,7 +144,6 @@ body{
 /* Products part */
 
 .container{
-    border: 2px solid red;
     display: flex;
 }
 
@@ -155,12 +154,14 @@ body{
 }
 
 .hp-container{
-    border: 2px solid f saddlebrown;
     width: 78%;
 }
 
 .head{
-    border: 2px solid saddlebrown;
+    border-bottom: 1px solid #919191;
+    margin: 0 16px;
+    padding-bottom: 4px;
+    font-size: 20px;
 }
 .products{
     height: 500px;
@@ -168,6 +169,7 @@ body{
     grid-template-columns: repeat(3, 31%);
     grid-gap: 24px; 
     justify-content: center;
+    margin-top: 15px;
 }
 
 .divclass{

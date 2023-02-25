@@ -282,6 +282,19 @@ body{
     color: white;
     font-size: 24px;
     cursor: pointer;
+    animation-name: spring;
+    animation-duration: 0.2s;
+}
+
+@keyframes spring {
+    0% {
+        background-color: white;
+        font-size: 20px;
+    }
+    100%{
+        background-color: black;
+        font-size: 23px;
+    } 
 }
 
 /* summer section ends here */
