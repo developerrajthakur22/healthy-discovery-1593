@@ -19,9 +19,13 @@ fetch("products.json")
     })   
 	.then((data) =>{
         console.log(data)
-        check(data.products)
+        //check(data.products)
+        filtering(data.products)
+        
     })
 	.catch(err => console.log(err));
+
+let cartdata = JSON.parse(localStorage.getItem("cart")) || []    
 
 function check(data){
       
@@ -53,13 +57,106 @@ function check(data){
      s3.classList.add("sizeclass")
      size.append(s1,s2,s3)
 
-     div.append(img,price,size)
+     let btn = document.createElement("button")
+     btn.innerText = "Add to Cart";
+     btn.classList.add("addtocart")
+
+     btn.addEventListener("click", ()=>{
+        cartdata.push(element)
+        localStorage.setItem("cart", JSON.stringify(cartdata))
+     })
+
+     div.append(img,price,size,btn)
 
      document.querySelector(".products").append(div)
      });
     
      //total product count
-     document.getElementById("count").innerText = "(" +data.length+")"
-}
+     document.getElementById("count").innerText = "(" + data.length + ")"
 
+    }
+     //filter part
+     function filtering(data){
+      
+        //filter by price
+        let price = document.querySelectorAll(".priceInp input")
 
+        for(let i = 0; i < price.length; i++){
+           price[i].addEventListener("change", ()=>{
+           
+            document.querySelector(".products").innerHTML = "";
+
+           let pricefilter = data.filter((element)=>{
+                  if(element.price < Number(price[i].value)){
+                    return element
+                  }
+              })
+              check(pricefilter)
+           })
+         }
+         
+        //  filter by gender
+        let genderC = document.querySelectorAll(".categoryinp input")
+
+         for(let i = 0; i < genderC.length; i++){
+            genderC[i].addEventListener("change", ()=>{
+
+           document.querySelector(".products").innerHTML = "";
+           
+           let genderfilter = data.filter((element)=>{
+             if(element.gender == genderC[i].value){
+                 return element
+             }
+           })
+           check(genderfilter)
+           if(genderC[i].value=="all"){
+            check(data)
+           } 
+            })
+         }
+
+        //low to high filter
+        
+         document.querySelector(".high").addEventListener("click", ()=>{
+              
+              document.querySelector(".products").innerHTML = "";
+              
+              let n = data.length
+              for(let i = 0; i < n; i++){
+                for(let j = 0; j < n-i-1; j++){
+                    if(data[j].price> data[j+1].price){
+                        let temp = data[j].price
+                        data[j].price = data[j].price
+                        data[j+1].price = temp
+                    } 
+                }  
+            }
+             check(data)
+            })
+         
+          //high to low filter
+         document.querySelector(".low").addEventListener("click", ()=>{
+            document.querySelector(".products").innerHTML = "";
+              
+            let n = data.length
+            for(let i = 0; i < n; i++){
+              for(let j = 0; j < n-i-1; j++){
+                  if(data[j].price> data[j+1].price){
+                      let temp = data[j].price
+                      data[j].price = data[j].price
+                      data[j+1].price = temp
+                  } 
+              }  
+          }
+           let temp = []
+           for(let i = 0; i < data.length; i++){
+               temp.push(data[data.length-1-i])
+           }
+           check(temp)
+
+         })
+
+         ///by default this will run if none of filter is selected
+        check(data)
+     }
+     

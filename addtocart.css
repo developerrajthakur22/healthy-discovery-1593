@@ -141,51 +141,21 @@ body{
     font-size: 15px;
 }
 
-/* Products part */
+/* add to cart design */
 
 .container{
-    display: flex;
-}
-
-.filterbox{
-    width: 22%;
-    border-bottom: 2px solid #ccc;
-}
-
-.hp-container{
-    width: 78%;
-}
-
-.head{
-    border-bottom: 1px solid #919191;
-    margin: 0 16px;
-    padding-bottom: 4px;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.head>div{
-    display: flex;
-    justify-content: space-between;
-    width: 27%;
-    font-size: 16px;
-}
-.head>div p:hover{
-    color: #919191;
-    cursor: pointer;
-}
-.head p{
-    margin: 0;
-}
-.products{
-    height: 500px;
+    height: 300px;
     display: grid;
-    grid-template-columns: repeat(3, 31%);
-    grid-gap: 24px; 
-    justify-content: center;
-    margin-top: 15px;
+    grid-template-columns: repeat(3, 280px);
+    grid-gap: 15px; 
+    justify-content: space-around;
+    margin: 0 auto;
 }
-
+.details{
+    border: 2px solid saddlebrown;
+    width: 30%;
+    margin: 0 60px;
+}
 .divclass{
     border: 1px dashed #ccc;
     text-align: center;
@@ -228,27 +198,53 @@ body{
     cursor: pointer;
 }
 
-/* products design end's here */
+/* big container */
 
-/* filterbox  */
+.billing{
+    display: flex;
+    justify-content: space-between;
+}
+.bill{
+    width: 36%;
+    border: 2px dotted #919191;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-right: 20px;
+    background-color: #f5f3f3;
+}
+.pin{
+    width: 70%;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+    margin-bottom: 10px;
+}
+.paybtn{
+    background-color: #f66f0c;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    width: 73.8%;
+    cursor: pointer;
+}
+.totalp{
+    font-weight: 700;
+}
+.Os{
+    border: 2px solid #ccc;
+    background-color: white;
+    width: 71.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.Os>h3{
+    margin: 0px;
+    margin-top: 5px;
+}
 
-.refined, .price, .cate, .ratings{
-    background-color: #F5F5F5;
-    border-bottom: 2px solid #EDEDED;
-    padding: 0;
-    height: 38px;
-    margin-bottom: 15px;
-}
-.refined>p, .price > p, .cate>p , .ratings>p{
-    margin: 0;
-    line-height: 38px;
-    font-weight: 670;
-    font-size: 14px;
-    margin-left: 8px;
-}
-.price p, .cate>p, .ratings>p{
-    font-weight: 300;
-}
-.priceInp, .categoryinp, .ratingsinp{
-    font-size: 15px;
-}

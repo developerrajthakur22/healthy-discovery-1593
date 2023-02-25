@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <!--navbar section 1 -->
+        <div>
+            <a href="" id="loginname"></a>
+            <a href=""><i class="fa-sharp fa-solid fa-download"></i> DOWNLOAD APP</a>
+            <a href=""><i class="fa-sharp fa-solid fa-location-dot"></i> CONTACT US</a>
+            <a href="loginpage.html"><i class="fa-sharp fa-solid fa-user"></i> LOGIN</a>
+            <a href="signup.html"><i class="fa-sharp fa-solid fa-user"></i> SIGN UP</a>
+        </div>
+
+        <!--navbar section 2 -->
+        <div>
+            <img src="./Fashion.png" alt="" height="50px">
+            <input type="text" placeholder="Search for FRESH FASHION" class="searchInput">
+            <button class="searchBtn">SEARCH</button>
+            <img src="./store.png" alt="" height="40px">
+            <div>
+                <a href="" class="cartLink"><i class="fa-sharp fa-solid fa-cart-shopping"></i> Cart</a>
+                <a href=""><i class="fa-sharp fa-solid fa-gift"></i> Loyalty Points</a>
+            </div>
+        </div>
+
+        <!--navbar section 3 -->
+        <div>
+            <div class="left">
+                <button class="men">MEN
+                    <div class="MenDropdown">
+                        <!-- dropdown -->
+                        <li><b>Upper</b>
+                            <ul>
+                                <li><a href="#">Shirt</a></li>
+                                <li><a href="#">T-Shirt</a></li>
+                                <li><a href="#">Jackets</a></li>
+                            </ul>
+                        </li>
+
+                        <li><b>Bottom</b>
+                            <ul>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Joggers</a></li>
+                                <li><a href="#">Lower</a></li>
+                            </ul>
+                        </li>
+
+                        <li><b>Footwear</b>
+                            <ul>
+                                <li><a href="#">sandel</a></li>
+                                <li><a href="#">shoes</a></li>
+                                <li><a href="#">slipper</a></li>
+                            </ul>
+                        </li>
+
+                    </div>
+                </button>
+                <button class="women">WOMEN
+                    <div class="WomenDropDown">
+                        <!-- dropdown -->
+                        <li><b>Upper</b>
+                            <ul>
+                                <li><a href="#">Shirt</a></li>
+                                <li><a href="#">T-Shirt</a></li>
+                                <li><a href="#">Jackets</a></li>
+                            </ul>
+                        </li>
+
+                        <li><b>Bottom</b>
+                            <ul>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Joggers</a></li>
+                                <li><a href="#">Lower</a></li>
+                            </ul>
+                        </li>
+
+                        <li><b>Footwear</b>
+                            <ul>
+                                <li><a href="#">sandel</a></li>
+                                <li><a href="#">shoes</a></li>
+                                <li><a href="#">slipper</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </button>
+            </div>
+            <div class="right">
+                <button><i class="fa-sharp fa-solid fa-truck-front"></i>LOOK BOOK</button>
+                <button>BLOG</button>
+            </div>
+        </div>
+
+        <!-- navbar ends here -->
+
+        <p class="homeway"> <a href="index.html">HOME</a> > <a href="products.html">PRODUCTS </a> > CART</p>
+
+        <!-- cart display -->
+       <div class="billing">
+           
+         <div class="container">
+               
+        </div>
+
+        <div class="bill">
+           <h1>Your Shopping Cart <i class="fa-sharp fa-solid fa-cart-shopping"></i></h1>
+           <hr>
+           <h2>Total Item (<span class="totalitem"></span>)</h2>
+           <input type="text" placeholder="Enter Pin code" class="pin">
+           <br>
+           <button class="paybtn">Proceed to Pay (Rs.<span class="totalprice"></span>)</button>
+
+           <div class="Os">
+             <h3>Order summary (Items <span class="total"></span>) </h3>
+             <hr>
+             <p>Total MRP - <span class="totalp"></span></p>
+             <p>Total Discount - <b>Rs.300</b></p>
+             <p>Shipping Charges <b> Free</b> <i class="fa-solid fa-truck-fast"></i></p>
+             
+
+           </div>
+            
+        </div>
+    </div>
+
+        <script>
+
+           let data = JSON.parse(localStorage.getItem("cart")) 
+
+           if(data==""){
+            let head = document.createElement("h1")
+            head.innerText = "Your cart is empty!";
+            head.style.width = "800px"
+            head.style.margin = "auto"
+            head.style.textAlign = "center";
+            document.querySelector(".container").append(head)
+           }
+
+           //total item
+           document.querySelector(".totalitem").innerText = data.length;
+
+            data.forEach((element,index) => {
+
+                let div = document.createElement("div")
+                div.classList.add("divclass")
+
+                let img = document.createElement("img")
+                img.src = element.image
+                img.style.height = "300px"
+
+                let price = document.createElement("p")
+                price.innerText = "Rs " + element.price
+                price.style.fontSize = "20px"
+                price.style.margin = "0 auto"
+                price.style.marginTop = "4px"
+
+                let size = document.createElement("div")
+                size.classList.add("size")
+                let s1 = document.createElement("p")
+                let s2 = document.createElement("p")
+                let s3 = document.createElement("p")
+                s1.innerText = 30
+                s2.innerText = 32
+                s3.innerText = 34
+                s1.classList.add("sizeclass")
+                s2.classList.add("sizeclass")
+                s3.classList.add("sizeclass")
+                size.append(s1, s2, s3)
+
+                let btn = document.createElement("button")
+                btn.innerText = "Remove Item";
+                btn.classList.add("addtocart")
+
+                btn.addEventListener("click", () => {
+                    div.remove()
+                    data.splice(index,1)
+                    localStorage.setItem("cart", JSON.stringify(data))
+                })
+
+                div.append(img, price, size, btn)
+
+                document.querySelector(".container").append(div)
+            });
+
+            //total price
+            console.log(data)
+            //total price
+            let sum = 0;
+             for(let i = 0; i < data.length; i++){
+                sum = sum + data[i].price
+             }  
+
+            document.querySelector(".totalprice").innerText = sum;
+            document.querySelector(".totalp").innerText = "Rs " + sum;
+            document.querySelector(".total").innerText = data.length;
+
+        </script>
+</body>
+
+</html>
