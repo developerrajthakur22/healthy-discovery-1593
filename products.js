@@ -57,12 +57,16 @@ function check(data){
      s3.classList.add("sizeclass")
      size.append(s1,s2,s3)
 
-     div.append(img,price,size)
+     let btn = document.createElement("button")
+     btn.innerText = "Add to Cart";
+     btn.classList.add("addtocart")
 
-     div.addEventListener("click", ()=>{
+     btn.addEventListener("click", ()=>{
         cartdata.push(element)
         localStorage.setItem("cart", JSON.stringify(cartdata))
      })
+
+     div.append(img,price,size,btn)
 
      document.querySelector(".products").append(div)
      });

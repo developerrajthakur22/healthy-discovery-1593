@@ -208,6 +208,24 @@ body{
     padding: 2px;
     background-color: white;
     margin-bottom: 0px;
+    margin-top: 3px;
+}
+.sizeclass:hover{
+    background-color: #919191;
+    color: black;
+}
+.addtocart{
+    background-color: #f66f0c;
+    border-radius: 6px;
+    margin: 6px 0;
+    border: none;
+    width: 40%;
+    color: white;
+    font-size: 15px;
+}
+.addtocart:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 
 /* products design end's here */

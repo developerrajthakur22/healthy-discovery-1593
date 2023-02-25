@@ -144,13 +144,107 @@ body{
 /* add to cart design */
 
 .container{
-    border: 2px solid darkblue;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-gap: 15px; 
+    justify-content: space-around;
+    margin: 0 auto;
 }
 .details{
     border: 2px solid saddlebrown;
     width: 30%;
     margin: 0 60px;
 }
+.divclass{
+    border: 1px dashed #ccc;
+    text-align: center;
+    background-color: #f5f3f3;
+    cursor: pointer;
+}
+.divclass:hover{
+    border: 1px dashed black;
+}
+.size{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.sizeclass{
+    border: 2px solid #ccc;
+    font-size: 14px;
+    padding: 2px;
+    background-color: white;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+.sizeclass:hover{
+    background-color: #919191;
+    color: black;
+}
+.addtocart{
+    background-color: #f66f0c;
+    border-radius: 6px;
+    margin: 6px 0;
+    border: none;
+    width: 40%;
+    color: white;
+    font-size: 15px;
+}
+.addtocart:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+/* big container */
+
+.billing{
+    display: flex;
+    justify-content: space-between;
+}
+.bill{
+    width: 36%;
+    border: 2px dotted #919191;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-right: 20px;
+    background-color: #f5f3f3;
+}
+.pin{
+    width: 70%;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+    margin-bottom: 10px;
+}
+.paybtn{
+    background-color: #f66f0c;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    width: 73.8%;
+    cursor: pointer;
+}
+.totalp{
+    font-weight: 700;
+}
+.Os{
+    border: 2px solid #ccc;
+    background-color: white;
+    width: 71.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.Os>h3{
+    margin: 0px;
+    margin-top: 5px;
+}
+
