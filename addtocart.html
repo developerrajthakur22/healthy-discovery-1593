@@ -187,6 +187,7 @@
                     div.remove()
                     data.splice(index,1)
                     localStorage.setItem("cart", JSON.stringify(data))
+                    window.location.reload()
                 })
 
                 div.append(img, price, size, btn)
@@ -205,6 +206,21 @@
             document.querySelector(".totalprice").innerText = sum;
             document.querySelector(".totalp").innerText = "Rs " + sum;
             document.querySelector(".total").innerText = data.length;
+
+        // pay button
+
+        let paybtn = document.querySelector(".paybtn")
+
+        paybtn.addEventListener("click", ()=>{
+           if(sum==0){
+               window.alert("Please add item to cart!")
+           }else{
+               window.alert("Payment done!")
+           }
+
+
+        })
+
 
         </script>
 </body>
