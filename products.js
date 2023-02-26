@@ -65,6 +65,9 @@ function check(data){
         if(Username=="WELCOME GUEST"){
             alert("Please login first")
         }else{
+            btn.innerText = "Item Added";
+            btn.style.backgroundColor = "lightgreen"
+            btn.style.color = "black"
             cartdata.push(element)
             localStorage.setItem("cart", JSON.stringify(cartdata))
         }

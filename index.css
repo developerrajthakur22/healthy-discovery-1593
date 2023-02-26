@@ -189,24 +189,24 @@ body{
 }
 
 .img1summer{
-    background-image: url("http://staticawsy.yepme.com/images/men_bottomwear_10oct17.jpg");
+    background-image: url("./homeImgs/summerimg1.jpg");
     height: 515px;
     width: 352px;
     margin-bottom: 20px;
 }
 .img2summer{
-    background-image: url("http://staticawsy.yepme.com/images/men_watches_10oct17.jpg");
+    background-image: url("./homeImgs/summerimg2.jpg");
     height: 515px;
     width: 352;
 }
 .img3summer{
-    background-image: url("http://staticawsy.yepme.com/images/women_bottomwear_10oct17.jpg");
+    background-image: url("./homeImgs/summerimg3.jpg");
     height: 515px;
     width: 352px;
     margin-bottom: 20px;
 }
 .img4summer{
-    background-image: url("http://staticawsy.yepme.com/images/women_watches_10oct17.jpg");
+    background-image: url("./homeImgs/summerimg4.jpg");
     height: 515px;
     width: 352px;
 }
@@ -241,7 +241,7 @@ body{
     color: #f66f0c;
 }
 .center_img{
-    background-image: url("http://staticawsy.yepme.com/images/center_images_winterwear_10oct17.gif");
+    background-image: url("./homeImgs/centerimg.gif");
     height: 695px;
     width: 530px;
 }
